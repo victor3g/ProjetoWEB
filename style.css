@@ -23,7 +23,38 @@ body {
        #000 40%,
        #00113C 100%);
     font-family: "Bebas Neue", sans-serif;
+    min-height: 100vh
  }
+
+ .criadores{
+   align-items: center;
+   display: grid;
+   font-family: "Bebas Neue", sans-serif;
+   color: #fff;
+ }
+
+ .info {
+   padding-top: 70px;
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+ .info, i{
+   font-size: 1.8rem;
+ }
+
+ .info, h4{
+   margin-top: 50px;
+ }
+
+.redes {
+   display: flex;
+   justify-content: center;
+   gap: 10px; /* Espaçamento entre os ícones */
+}
 
 .index{
     align-items: center;
@@ -49,6 +80,7 @@ nav{
     color: #fff;
     padding: 20px;
     text-align: center;
+    bottom: 0;
 }
 
  a{
@@ -369,8 +401,7 @@ td {
   .botao{
    font-size: 80px;
   }
-  
- }
+}
 
  @media screen and (max-width: 340px){
    .sistema{
@@ -420,4 +451,4 @@ td {
    .planeta9{
       width: 70px;
    }
- }
+}
