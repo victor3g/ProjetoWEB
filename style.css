@@ -36,7 +36,7 @@ body {
 }
 
 nav{
-    background: linear-gradient(to bottom, #00113C 70%, #000);
+    background: linear-gradient(to bottom, #00113C 60%, transparent);
     position: fixed;
     top: 0;
     left: 0;
@@ -247,6 +247,9 @@ td {
    opacity: 1; /* Mostra a legenda ao passar o mouse */
 }
 
+.imagempag{
+   margin: 5px;
+}
 
 /*Estelas*/
 .star {
@@ -345,11 +348,26 @@ td {
       display: flex;
       align-items: center;
       text-align:justify;
+      flex-direction: column;
   }
+
+  .left {
+   float:none;
+   margin-right: 0%;
+}
+
+.rigth {
+   overflow: hidden;
+   padding-left: 0%;
+}
 
   .txt{
    background-color: transparent;
    padding: 1cm;
+  }
+
+  .botao{
+   font-size: 80px;
   }
   
  }
@@ -357,6 +375,16 @@ td {
  @media screen and (max-width: 340px){
    .sistema{
       padding-top: 190vh;
+   }
+
+   .botao{
+      font-size: 40px;
+   }
+ }
+
+ @media screen and (max-width: 500px){
+   .botao{
+      font-size: 50px;
    }
  }
 
@@ -378,9 +406,6 @@ td {
    }
    .planeta4{
       width: 80px;
-   }
-   .planeta5{
-
    }
    .planeta6{
       width: 120px;
