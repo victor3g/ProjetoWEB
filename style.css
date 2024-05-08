@@ -1,0 +1,454 @@
+/*Paleta gradient global*/
+:root {
+    --gradient: linear-gradient(
+       to right,
+       #002166,
+       #00318F,
+       #0040B9,
+       #0050E3,
+       #2869FF,
+       #517BFF,
+       #798DFF,
+       #A1A0FF
+    );
+ }
+
+body {
+    place-content: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+       to bottom, 
+       #000 0%,
+       #000 40%,
+       #00113C 100%);
+    font-family: "Bebas Neue", sans-serif;
+    min-height: 100vh
+ }
+
+ .criadores{
+   align-items: center;
+   display: grid;
+   font-family: "Bebas Neue", sans-serif;
+   color: #fff;
+ }
+
+ .info {
+   padding-top: 70px;
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+ .info, i{
+   font-size: 1.8rem;
+ }
+
+ .info, h4{
+   margin-top: 50px;
+ }
+
+.redes {
+   display: flex;
+   justify-content: center;
+   gap: 10px; /* Espaçamento entre os ícones */
+}
+
+.index{
+    align-items: center;
+    display: grid;
+}
+
+.entrar{
+    margin-top: 40vh;
+    height: 50vh;
+}
+
+nav{
+    background: linear-gradient(to bottom, #00113C 60%, transparent);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+ }
+
+ footer {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+}
+
+ a{
+    text-decoration: none;
+    color: #517BFF;
+ }
+ 
+ ul{
+    list-style: none;
+    text-align: center;
+ }
+ 
+ ul li{
+    font-size: 1.5rem;
+    padding: 2vh;
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    transition: 1s;
+ }
+
+ .sistema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+
+ /*Defininto tamanho e posição dos planetas do sistema solar*/
+.planeta1 {
+    width: 440px;
+    height: auto;
+ }
+
+ .planeta2 {
+    width: 50px;
+    height: auto;
+ }
+ 
+ .planeta3 {
+    width: 90px;
+    height: auto;
+ }
+ 
+ .planeta4 {
+    width: 100px;
+    height: auto;
+ }
+ 
+ .planeta5 {
+    width: 70px;
+    height: auto;
+ }
+ 
+ .planeta6 {
+    width: 210px;
+    height: auto;
+ }
+ .planeta7 {
+    width: 340px;
+    height: auto;
+ }
+ .planeta8 {
+    width: 140px;
+    height: auto;
+ }
+ .planeta9 {
+    width: 100px;
+    height: auto;
+ }
+
+ .nomeplaneta{
+    margin-top: 12vh;
+    text-align: center;
+    color: #fff;
+ }
+
+ .container {
+    padding-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.left {
+    float: left;
+    margin-right: 20px;
+}
+
+.rigth {
+    overflow: hidden;
+    padding-top: 5vh;
+    padding-left: 5vh;
+}
+
+/*Modificaçoes das tabelas*/
+.tabela{
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+
+.botao{
+    position: relative;
+    font-size: 8rem;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 1s;
+ }
+ 
+ .botao:after{
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+ }
+ 
+ .botao:hover{
+    transform: scale(1.10, 1.10);
+ }
+ 
+ .botao:hover::after{
+    opacity: 1;
+ }
+
+/*Criando efeito zoom nas imagens ao passar o mouse*/
+.sistema img{
+   position: relative;
+   color: transparent;
+   transition: 1s;
+}
+
+.sistema img:after{
+   position: absolute;
+   opacity: 0;
+   transition: 1s;
+   z-index: -1;
+}
+
+.sistema img:hover{
+   transform: scale(1.10, 1.10);
+   cursor: pointer;
+}
+
+.sistema img:hover::after{
+   opacity: 1;
+}
+
+/*Colocando legenda nos planetas ao passar o mouse*/
+.planetas {
+   position: relative;
+   display: inline-block;
+   margin: 2vh;
+}
+
+.txt {
+   position: absolute;
+   top: -50px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   padding: 1vh;
+   margin: 0;
+   transition: opacity 0.3s;
+   opacity: 0; /* Inicialmente escondido */
+   color: #517BFF;
+}
+
+.planetas:hover .txt {
+   opacity: 1; /* Mostra a legenda ao passar o mouse */
+}
+
+.imagempag{
+   margin: 5px;
+}
+
+/*Estelas*/
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: twinkling 3s infinite;
+ }
+ 
+ @keyframes twinkling {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+ }
+
+ /*Formatação de imagem e texto da pagina API Naza*/
+
+#apod {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+#apod-image {
+    max-width: 100%;
+    max-height: 60vh;
+}
+
+.tituloapod{
+    text-align: center;
+    color: #2869FF;
+    margin-top: 15vh;
+}
+
+#apod-title, #apod-explanation {
+    margin-top: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #2869FF;
+}
+
+/*Movimentação do GIF pela tela*/
+
+.gif {
+    width: 12%;
+    position: fixed;
+    top: 0;
+    left: -100px; /* Inicialmente, a imagem estará fora da tela na esquerda */
+    animation: move 5s linear infinite;
+ }
+ 
+ @keyframes move {
+    0% {
+        left: -100px; /* Posição inicial fora da tela na esquerda */
+    }
+    100% {
+        left: calc(100% + 100px); /* Posição final fora da tela na direita */
+    }
+ }
+
+  /*Aplicando responsividade*/
+ @media screen and (max-width: 1150px){
+   body{
+      height: auto;
+   }
+
+   .sistema {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 135vh;
+   }
+
+   .planeta1{
+      width: 300px;
+   }
+
+   footer{
+      padding-top: 150vh;
+   }
+
+   .nomeplaneta{
+      padding-top: 10vh;
+   }
+
+   img{
+      width: 200px;
+   }
+
+   .container {
+      display: flex;
+      align-items: center;
+      text-align:justify;
+      flex-direction: column;
+  }
+
+  .left {
+   float:none;
+   margin-right: 0%;
+}
+
+.rigth {
+   overflow: hidden;
+   padding-left: 0%;
+}
+
+  .txt{
+   background-color: transparent;
+   padding: 1cm;
+  }
+
+  .botao{
+   font-size: 80px;
+  }
+}
+
+ @media screen and (max-width: 340px){
+   .sistema{
+      padding-top: 190vh;
+   }
+
+   .botao{
+      font-size: 40px;
+   }
+ }
+
+ @media screen and (max-width: 500px){
+   .botao{
+      font-size: 50px;
+   }
+ }
+
+ @media screen and (min-width: 750px) and (max-width: 1000px){
+   .sistema{
+      padding-top: 100vh;
+   }
+ }
+
+ @media screen and (min-width: 1200px)and (max-width: 1300px){
+   .planeta1{
+      width: 270px;
+   }
+   .planeta2{
+      width: 40px;
+   }
+   .planeta3{
+      width: 70px;
+   }
+   .planeta4{
+      width: 80px;
+   }
+   .planeta6{
+      width: 120px;
+   }
+   .planeta7{
+      width: 250px;
+   }
+
+   .planeta8{
+      width: 90px;
+   }
+   .planeta9{
+      width: 70px;
+   }
+}
