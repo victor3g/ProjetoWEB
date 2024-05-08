@@ -136,11 +136,11 @@ nav{
 
 .left {
     float: left;
-    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    margin-right: 20px;
 }
 
 .rigth {
-    overflow: hidden; /* Limpa os floats */
+    overflow: hidden;
     padding-top: 5vh;
     padding-left: 5vh;
 }
@@ -151,7 +151,7 @@ nav{
 }
 
 table {
-    width: 100%; /* Garante que a tabela ocupe 100% da largura do div */
+    width: 100%;
     border-collapse: collapse;
     border-radius: 8px;
     overflow: hidden;
@@ -226,17 +226,17 @@ td {
 .planetas {
    position: relative;
    display: inline-block;
-   margin: 0 20px; /* Ajuste o espaçamento entre as imagens conforme necessário */
+   margin: 2vh;
 }
 
 .txt {
    position: absolute;
-   top: -50px; /* Ajuste conforme necessário */
+   top: -50px;
    left: 50%;
    transform: translateX(-50%);
    background-color: rgba(0, 0, 0, 0.5);
    color: #fff;
-   padding: 5px;
+   padding: 1vh;
    margin: 0;
    transition: opacity 0.3s;
    opacity: 0; /* Inicialmente escondido */
@@ -279,7 +279,7 @@ td {
 
 #apod-image {
     max-width: 100%;
-    max-height: 60vh; /* ajuste conforme necessário */
+    max-height: 60vh;
 }
 
 .tituloapod{
@@ -311,4 +311,88 @@ td {
     100% {
         left: calc(100% + 100px); /* Posição final fora da tela na direita */
     }
+ }
+
+  /*Aplicando responsividade*/
+ @media screen and (max-width: 1150px){
+   body{
+      height: auto;
+   }
+
+   .sistema {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 135vh;
+   }
+
+   .planeta1{
+      width: 300px;
+   }
+
+   footer{
+      padding-top: 150vh;
+   }
+
+   .nomeplaneta{
+      padding-top: 10vh;
+   }
+
+   img{
+      width: 200px;
+   }
+
+   .container {
+      display: flex;
+      align-items: center;
+      text-align:justify;
+  }
+
+  .txt{
+   background-color: transparent;
+   padding: 1cm;
+  }
+  
+ }
+
+ @media screen and (max-width: 340px){
+   .sistema{
+      padding-top: 190vh;
+   }
+ }
+
+ @media screen and (min-width: 750px) and (max-width: 1000px){
+   .sistema{
+      padding-top: 100vh;
+   }
+ }
+
+ @media screen and (min-width: 1200px)and (max-width: 1300px){
+   .planeta1{
+      width: 270px;
+   }
+   .planeta2{
+      width: 40px;
+   }
+   .planeta3{
+      width: 70px;
+   }
+   .planeta4{
+      width: 80px;
+   }
+   .planeta5{
+
+   }
+   .planeta6{
+      width: 120px;
+   }
+   .planeta7{
+      width: 250px;
+   }
+
+   .planeta8{
+      width: 90px;
+   }
+   .planeta9{
+      width: 70px;
+   }
  }
