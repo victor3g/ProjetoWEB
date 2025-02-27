@@ -21,7 +21,7 @@ O projeto foi desenvolvido utilizando **HTML, CSS e JavaScript**, sendo totalmen
 ## Licença
 Este projeto é de uso livre e aberto para fins educativos.
 
----
+##
 Criado por 
 - **Victor Gomes Cavalcante** | Unieuro
 - **João Vitor L. M. Silva** | Unieuro
