@@ -10,11 +10,13 @@ O projeto foi desenvolvido utilizando **HTML, CSS e JavaScript**, sendo totalmen
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+- **API**
 
 ## Funcionalidades
 - Visualização interativa do Sistema Solar.
 - Informações detalhadas sobre cada planeta.
 - Design responsivo para adaptação em dispositivos móveis.
+- Exibição da imagem astronômica do dia utilizando a API da NASA
 
 ## Licença
 Este projeto é de uso livre e aberto para fins educativos.
