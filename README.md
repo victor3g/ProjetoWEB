@@ -1,6 +1,5 @@
 # Projeto WEB - Sistema Solar Imersivo
 
----
 ## Descrição
 Este é um projeto de desenvolvimento web criado para o curso de Sistemas de Informação da Universidade Unieuro. 
 O sistema apresenta uma experiência imersiva sobre o Sistema Solar, com informações detalhadas sobre cada planeta.
